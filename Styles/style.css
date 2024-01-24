@@ -1,25 +1,40 @@
 body{
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(3, 13, 3);
     color: rgb(121, 121, 169);
+    font-family: Fira code;
 }
 
 #hello{
-    margin-left: 10px;
-    height: auto;
-    width: auto;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-#profilbild{
-    width: 260px;
+#header{
+    width: 860px;
     height: 540px;
-    margin-left: 40px;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     }
-.img_me{
-    padding: 0px 10px;
-    position: absolute;
+#img_me{
     width: 240px;
     height: 320px;   
+    display: inline;
     
+}
+.main{
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer{
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    background-color: rgb(22, 21, 21);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
 }
