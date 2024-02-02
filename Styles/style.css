@@ -17,7 +17,7 @@ body{
     padding: 15px 0;
     }
 
-#hello{
+.hello{
     font-size: 18px;
     font-weight: bold;
     max-width: 500px;
@@ -25,29 +25,31 @@ body{
     font-family: Fira code;
     }
 
-#img_me{
+.img_me{
     max-width: 200px;
-    max-height: 280px;
+    /* max-height: 280px; */
     border-radius: 6px;
     }
 
 .menu{
     position:sticky;
     top: 0;
+    padding-top: 10px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     max-width: 860px;
     min-width: 380px;
     height: 35px;
-    border-bottom: 1px solid black;
+    border-bottom: 6px double black;
     z-index: 1;
+    background-color: rgb(50,49,49);
 }
 
 .nav{
     margin-left: 15px;
     /* display: inline; */
-    padding: 2px;
+    padding: 2px; 
 }
 a, a:visited{
     color:rgb(181, 207, 175);
