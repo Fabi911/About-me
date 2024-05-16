@@ -1,7 +1,11 @@
-
+import AboutMe from "@/components/AboutMe";
+import TechBoard from "@/components/TechBoard";
 
 export default function Home() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <TechBoard />
+      <AboutMe />
+    </>
   );
 }
