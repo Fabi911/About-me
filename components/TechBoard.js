@@ -1,39 +1,16 @@
 import styled from "styled-components";
-import { techStack } from "@/lib/db";
-import Image from "next/image";
+import Carousel from "./Carousel/Carousel";
 
 export default function TechBoard() {
   return (
     <ConatainerTechBoard>
       <h2>my tech stack & skills</h2>
-      <ContainerIcons>
-        {techStack.map((skill) => (
-          <Image
-            key={skill.name}
-            src={skill.logo}
-            alt={skill.name}
-            style={{
-              width: "auto",
-              height: "5rem",
-            }}
-            width={150}
-            height={150}
-          />
-        ))}
-      </ContainerIcons>
+      <Carousel />
     </ConatainerTechBoard>
   );
 }
 
 // styled-components
-
-const ContainerIcons = styled.section`
-  width: 50%;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`;
 
 const ConatainerTechBoard = styled.div`
   width: 60vw;
@@ -41,7 +18,7 @@ const ConatainerTechBoard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 75%;
