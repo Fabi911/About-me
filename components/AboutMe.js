@@ -5,8 +5,11 @@ export default function AboutMe() {
     <ContainerAboutMe>
       <h2>about me</h2>
       <ContainerTextAboutMe>
-        sdfg hjklsdfghjkl fdghjklds afghjksdfgdfg sf sfhkusfhksfgjk h fskjfskjh
-        fs khdfhks fskjdfhs kjhksfh jhksf hsf h
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, mollitia
+        odit et fugit corrupti ratione, ipsam est earum, odio qui accusantium.
+        Quam aspernatur eos at magnam eligendi veritatis soluta aut repudiandae
+        sequi sed unde iusto velit a doloribus adipisci ratione, saepe earum
+        vitae voluptates voluptatum corrupti fugit. Ipsa, quasi! Reiciendis.
       </ContainerTextAboutMe>
     </ContainerAboutMe>
   );

@@ -7,7 +7,9 @@ export default function Layout({ children }) {
         <h1>Fabian Döz - Web Developer</h1>
       </Header>
       {children}
-      <Footer></Footer>
+      <Footer>
+        <p>&copy; Fabian Döz</p>
+      </Footer>
     </>
   );
 }
@@ -31,6 +33,8 @@ const Header = styled.header`
 
 const Footer = styled.footer`
   background-color: #202020;
+  color: #dfdfdf;
+  text-align: center;
   width: 100vw;
   height: 3rem;
   position: fixed;
