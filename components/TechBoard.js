@@ -5,6 +5,7 @@ export default function TechBoard() {
   return (
     <ConatainerTechBoard>
       <h2>my tech stack & skills</h2>
+      <Frame />
       <Carousel />
     </ConatainerTechBoard>
   );
@@ -14,14 +15,24 @@ export default function TechBoard() {
 
 const ConatainerTechBoard = styled.div`
   width: 60vw;
-  background-color: rgba(170, 170, 170, 0.95);
+  background-color: rgba(60, 60, 60, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 150px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 75%;
-  border-bottom-right-radius: 75%;
+  border-radius: 5px;
   box-shadow: 1px 2px 40px #000;
+  position: relative;
+`;
+
+const Frame = styled.div`
+  height: 8.5rem;
+  width: 62rem;
+  position: absolute;
+  background-color: white;
+  top: 95px;
+  opacity: 0.3;
+  /* border: 5px ridge black; */
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
 `;

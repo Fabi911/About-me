@@ -1,5 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
+const calcVerschiebung = 360 / 10;
+const verschiebung = calcVerschiebung + "deg";
+
 const rotate360 = keyframes`
   from {
     transform: rotateY(0deg);
@@ -21,7 +24,7 @@ export const CarouselStyled = styled.div`
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  animation: ${rotate360} 60s infinite forwards linear;
+  animation: ${rotate360} 32s infinite forwards linear;
 `;
 export const CarouselFace = styled.div`
   position: absolute;
@@ -31,36 +34,37 @@ export const CarouselFace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  backface-visibility: hidden;
 
   &:nth-child(1) {
-    transform: rotateY(0deg) translateZ(430px);
+    transform: rotateY(calc((1 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(2) {
-    transform: rotateY(36deg) translateZ(430px);
+    transform: rotateY(calc((2 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(3) {
-    transform: rotateY(72deg) translateZ(430px);
+    transform: rotateY(calc((3 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(4) {
-    transform: rotateY(108deg) translateZ(430px);
+    transform: rotateY(calc((4 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(5) {
-    transform: rotateY(144deg) translateZ(430px);
+    transform: rotateY(calc((5 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(6) {
-    transform: rotateY(180deg) translateZ(430px);
+    transform: rotateY(calc((6 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(7) {
-    transform: rotateY(216deg) translateZ(430px);
+    transform: rotateY(calc((7 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(8) {
-    transform: rotateY(252deg) translateZ(430px);
+    transform: rotateY(calc((8 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(9) {
-    transform: rotateY(288deg) translateZ(430px);
+    transform: rotateY(calc((9 - 1) * ${verschiebung})) translateZ(430px);
   }
   &:nth-child(10) {
-    transform: rotateY(324deg) translateZ(430px);
+    transform: rotateY(calc((10 - 1) * ${verschiebung})) translateZ(430px);
   }
 `;
 

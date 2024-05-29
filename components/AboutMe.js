@@ -5,11 +5,14 @@ export default function AboutMe() {
     <ContainerAboutMe>
       <h2>about me</h2>
       <ContainerTextAboutMe>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, mollitia
-        odit et fugit corrupti ratione, ipsam est earum, odio qui accusantium.
-        Quam aspernatur eos at magnam eligendi veritatis soluta aut repudiandae
-        sequi sed unde iusto velit a doloribus adipisci ratione, saepe earum
-        vitae voluptates voluptatum corrupti fugit. Ipsa, quasi! Reiciendis.
+        Ich bin 34 Jahre alt Wohnhaft in Stavern (Emsland).
+        <br />
+        Ich habe schon seit meiner Kindheit eine große Leidenschaft für IT.
+        <br />
+        Abschluss als Web Developer bei neueFische GmbH im April 2024.
+        <br />
+        Umfassende Kenntnisse in HTML5, CSS3, Javascript, React, Next.js,
+        Node.js und Styled Components.
       </ContainerTextAboutMe>
     </ContainerAboutMe>
   );
@@ -20,22 +23,20 @@ export default function AboutMe() {
 const ContainerTextAboutMe = styled.article`
   width: 65%;
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
 `;
 
 const ContainerAboutMe = styled.div`
   width: 60vw;
   margin-top: 60px;
-  background-color: rgba(170, 170, 170, 0.95);
+  background-color: rgba(60, 60, 60, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 100px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 75%;
-  border-top-right-radius: 75%;
+  border-radius: 5px;
   box-shadow: 1px 2px 40px #000;
 `;
