@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "kill-port": "node killPort.js"
   },
   "dependencies": {
     "mongoose": "^8.2.3",
