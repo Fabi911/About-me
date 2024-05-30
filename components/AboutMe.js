@@ -5,14 +5,15 @@ export default function AboutMe() {
     <ContainerAboutMe>
       <h2>about me</h2>
       <ContainerTextAboutMe>
-        Ich bin 34 Jahre alt Wohnhaft in Stavern (Emsland).
-        <br />
-        Ich habe schon seit meiner Kindheit eine große Leidenschaft für IT.
-        <br />
-        Abschluss als Web Developer bei neueFische GmbH im April 2024.
-        <br />
-        Umfassende Kenntnisse in HTML5, CSS3, Javascript, React, Next.js,
-        Node.js und Styled Components.
+        Hallo Welt, ich bin Fabian Döz (34). Mein großes Interesse besteht
+        darin, nicht stehen zu bleiben, sondern Neues zu lernen, Probleme zu
+        analysieren und zu lösen.
+        <br /> Auch mal neue Wege zu gehen, wie das erfolgreich abgeschlossene
+        Bootcamp zum Web Developer bei der neueFische GmbH. <br />
+        Hier habe ich meine wahre Passion gefunden. Denn für mich macht der
+        Beruf des Web Developers genau das aus, Bestehendes weiter zu
+        entwickeln, Fehler zu beheben und gemeinsam im Team optimale Lösungen zu
+        erarbeiten.
       </ContainerTextAboutMe>
     </ContainerAboutMe>
   );
@@ -25,7 +26,7 @@ const ContainerTextAboutMe = styled.article`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   font-size: 1.1rem;
 `;
 
