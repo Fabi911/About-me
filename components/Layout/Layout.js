@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
+import { Titillium_Web } from "next/font/google";
+
+const titilliumWeb = Titillium_Web({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export default function Layout({ children }) {
   return (
-    <>
+    <main className={titilliumWeb.className}>
       <Header>
         <h1>Fabian Döz - Web Developer</h1>
       </Header>
@@ -10,7 +17,7 @@ export default function Layout({ children }) {
       <Footer>
         <p>&copy; Fabian Döz</p>
       </Footer>
-    </>
+    </main>
   );
 }
 
